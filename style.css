@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f3f5f9;
+  color: #1f2937;
+}
+
+header {
+  background: #2f4ea2;
+  color: #fff;
+  padding: 24px 20px;
+  text-align: center;
+}
+header h1 { margin: 0 0 6px; font-size: 1.6rem; }
+header p  { margin: 0; opacity: 0.85; }
+
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.card h2 { margin-top: 0; font-size: 1.15rem; }
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 8px; text-align: center; border-bottom: 1px solid #e5e7eb; }
+th { background: #f9fafb; font-size: 0.85rem; color: #4b5563; }
+
+td input {
+  width: 70px;
+  padding: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  text-align: center;
+}
+td input.name { width: 60px; }
+
+.buttons { display: flex; gap: 10px; margin-top: 14px; }
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2f4ea2;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+button:hover { background: #243d82; }
+button.secondary { background: #e5e7eb; color: #1f2937; }
+button.secondary:hover { background: #d1d5db; }
+button.remove { background: none; color: #dc2626; padding: 4px 8px; font-size: 1.1rem; }
+button.remove:hover { background: #fee2e2; }
+
+.hint { font-size: 0.85rem; color: #6b7280; margin-bottom: 0; }
+
+.best {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.algo {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+.algo.winner { border-color: #22c55e; border-width: 2px; }
+.algo h3 { margin: 0 0 10px; font-size: 1rem; }
+
+.badge {
+  background: #22c55e;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.gantt { display: flex; margin: 10px 0; overflow-x: auto; }
+.gantt div {
+  min-width: 34px;
+  padding: 8px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
+  border-right: 1px solid #fff;
+  background: #3b82f6;
+}
+.gantt div.late { background: #ef4444; }
+
+.yes { color: #16a34a; font-weight: 600; }
+.no  { color: #dc2626; font-weight: 600; }
+
+.stats { margin: 10px 0 0; font-size: 0.9rem; color: #374151; }

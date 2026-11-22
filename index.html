@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Job Scheduling System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Job Scheduling System</h1>
+    <p>Add jobs, run the scheduler, and see which algorithm works best.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. Jobs</h2>
+      <div class="table-wrap">
+        <table id="jobTable">
+          <thead>
+            <tr>
+              <th>Job</th><th>Arrival</th><th>Burst</th>
+              <th>Priority</th><th>Deadline</th><th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="buttons">
+        <button id="addBtn" class="secondary">+ Add Job</button>
+        <button id="runBtn">Run Scheduler</button>
+      </div>
+      <p class="hint">Lower priority number = more important. Deadline is the time the job should finish by.</p>
+    </section>
+
+    <section class="card" id="resultSection" hidden>
+      <h2>2. Results</h2>
+      <div id="bestBox" class="best"></div>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
